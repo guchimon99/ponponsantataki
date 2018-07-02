@@ -50,8 +50,8 @@ class Play extends Component {
 
     if (!game) return
 
-    if (game.isOver){
-      if (user.score < game.score) updateScore(user.uid, game.score)
+    if (nextProps.game.isOver){
+      if (user.score < nextProps.game.score) updateScore(user.uid, nextProps.game.score)
       return
     }
 
